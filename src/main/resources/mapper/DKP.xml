@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.webdkp.dao.DkpDao">
+    <select id="qry" resultType="com.example.webdkp.pojo.Dkp" parameterType="java.util.Map">
+        select * from DKP a
+        where 1=1
+        <if test="name!=null&amp;&amp;name!=''">
+            and a.NAME=#{name}
+        </if>
+        <if test="profession!=null&amp;&amp;profession!=''">
+            and a.profession=#{profession}
+        </if>
+        order by a.DKP
+    </select>
+</mapper>
