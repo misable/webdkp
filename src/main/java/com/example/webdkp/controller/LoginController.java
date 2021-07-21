@@ -31,8 +31,8 @@ public class LoginController {
 
 
         }catch (Exception e){
-            log.error("ÓÃ»§µÇÂ¼Ê§°Ü", e);
-            rspMsg = new RspMsg("fail", "ÓÃ»§µÇÂ¼Òì³£");
+            log.error("ç”¨æˆ·ç™»å½•å¤±è´¥", e);
+            rspMsg = new RspMsg("fail", "ç”¨æˆ·ç™»å½•å¼‚å¸¸");
         }
 
 
